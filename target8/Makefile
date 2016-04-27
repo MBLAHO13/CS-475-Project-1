@@ -3,7 +3,7 @@
 #
 
 CC := gcc
-CFLAGS := -g -m32 -static -U_FORTIFY_SOURCE -DCOOKIE=$(shell cat cookie)
+CFLAGS := -m32 -static -U_FORTIFY_SOURCE -DCOOKIE=$(shell cat cookie)
 LDFLAGS :=
 LDLIBS :=
 

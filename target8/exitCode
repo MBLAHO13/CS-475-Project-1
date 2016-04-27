@@ -1,0 +1,71 @@
+   19433:	e8 b8 9d 01 00       	call   331f0 <__cxa_atexit>
+   194d6:	e8 d5 9a 01 00       	call   32fb0 <exit>
+   1964b:	e8 58 fa 09 00       	call   b90a8 <_exit>
+   3179a:	e8 09 79 08 00       	call   b90a8 <_exit>
+   32f9c:	e8 07 61 08 00       	call   b90a8 <_exit>
+00032fb0 <exit>:
+00032fe0 <on_exit>:
+   32ff8:	e8 33 00 00 00       	call   33030 <on_exit+0x50>
+   32fff:	74 25                	je     33026 <on_exit+0x46>
+   3302b:	eb f4                	jmp    33021 <on_exit+0x41>
+   33051:	74 01                	je     33054 <on_exit+0x74>
+   3305b:	0f 85 c9 01 00 00    	jne    3322a <__cxa_atexit+0x3a>
+   3306d:	0f 84 b7 00 00 00    	je     3312a <on_exit+0x14a>
+   3307d:	74 33                	je     330b2 <on_exit+0xd2>
+   3308d:	75 39                	jne    330c8 <on_exit+0xe8>
+   33099:	eb 11                	jmp    330ac <on_exit+0xcc>
+   330a7:	75 1f                	jne    330c8 <on_exit+0xe8>
+   330b0:	75 ee                	jne    330a0 <on_exit+0xc0>
+   330bf:	74 6b                	je     3312c <on_exit+0x14c>
+   330c3:	eb b3                	jmp    33078 <on_exit+0x98>
+   330cb:	74 4b                	je     33118 <on_exit+0x138>
+   330f8:	74 01                	je     330fb <on_exit+0x11b>
+   33102:	0f 85 32 01 00 00    	jne    3323a <__cxa_atexit+0x4a>
+   3311c:	74 15                	je     33133 <on_exit+0x153>
+   33128:	eb b2                	jmp    330dc <on_exit+0xfc>
+   33131:	eb e7                	jmp    3311a <on_exit+0x13a>
+   33135:	75 26                	jne    3315d <on_exit+0x17d>
+   33151:	74 9d                	je     330f0 <on_exit+0x110>
+   3315b:	eb c1                	jmp    3311e <on_exit+0x13e>
+   331a6:	e8 85 fe ff ff       	call   33030 <on_exit+0x50>
+   331ad:	74 2c                	je     331db <on_exit+0x1fb>
+   331e0:	eb f4                	jmp    331d6 <on_exit+0x1f6>
+000331f0 <__cxa_atexit>:
+   33220:	e8 6b ff ff ff       	call   33190 <on_exit+0x1b0>
+   33235:	e9 27 fe ff ff       	jmp    33061 <on_exit+0x81>
+   33245:	e9 be fe ff ff       	jmp    33108 <on_exit+0x128>
+00033390 <quick_exit>:
+000333c0 <__cxa_at_quick_exit>:
+   333f0:	e8 9b fd ff ff       	call   33190 <on_exit+0x1b0>
+   3f30c:	e8 97 9d 07 00       	call   b90a8 <_exit>
+   3ff08:	e8 a3 30 ff ff       	call   32fb0 <exit>
+   6761d:	e8 86 1a 05 00       	call   b90a8 <_exit>
+   7ce48:	e8 a3 63 fb ff       	call   331f0 <__cxa_atexit>
+   7cfe4:	e8 c7 5f fb ff       	call   32fb0 <exit>
+000b90a8 <_exit>:
+   d9117:	e8 8c ff fd ff       	call   b90a8 <_exit>
+   da869:	e8 3a e8 fd ff       	call   b90a8 <_exit>
+   ebd87:	e8 1c d3 fc ff       	call   b90a8 <_exit>
+   ed49e:	e8 0d 5b f4 ff       	call   32fb0 <exit>
+   ed4ce:	e8 dd 5a f4 ff       	call   32fb0 <exit>
+   ed773:	e8 38 58 f4 ff       	call   32fb0 <exit>
+   fa764:	e8 47 88 f3 ff       	call   32fb0 <exit>
+   fbb1d:	e8 8e 74 f3 ff       	call   32fb0 <exit>
+   fbb2d:	e8 7e 74 f3 ff       	call   32fb0 <exit>
+   fc234:	e8 77 6d f3 ff       	call   32fb0 <exit>
+000fd520 <pthread_exit>:
+   fd537:	74 1e                	je     fd557 <pthread_exit+0x37>
+   fd55e:	e8 4d 5a f3 ff       	call   32fb0 <exit>
+  113c52:	e8 59 f3 f1 ff       	call   32fb0 <exit>
+  1159c6:	e8 e5 d5 f1 ff       	call   32fb0 <exit>
+  115a76:	e8 35 d5 f1 ff       	call   32fb0 <exit>
+  116ec4:	e8 df 21 fa ff       	call   b90a8 <_exit>
+  11ce20:	e8 8b 61 f1 ff       	call   32fb0 <exit>
+00121830 <svc_exit>:
+  1261c9:	e8 da 2e f9 ff       	call   b90a8 <_exit>
+  1262ea:	e8 b9 2d f9 ff       	call   b90a8 <_exit>
+0012bd60 <atexit>:
+  12bd77:	74 1f                	je     12bd98 <atexit+0x38>
+  12bd8e:	e8 5d 74 f0 ff       	call   331f0 <__cxa_atexit>
+  12bd9a:	eb df                	jmp    12bd7b <atexit+0x1b>
+  12c764:	e8 3f c9 f8 ff       	call   b90a8 <_exit>
