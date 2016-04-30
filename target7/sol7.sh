@@ -1,1 +1,1 @@
-./target7 "$(python sol7.py 1)" "$(python sol7.py 2)" "$(python sol7.py 3)"
+sudo ./target7 "$(python sol7.py 1)" "$(python sol7.py 2)" "$(python sol7.py 3)"

