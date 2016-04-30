@@ -17,7 +17,7 @@ echo "Test 5"
 ./target5 $(python sol5.py)
 
 echo "Test 6"
-./target6 "$(python sol6.py)"
+./target6 $(python sol6.py)
 
 echo "Test 7"
 ./target7 "$(python sol7.py 1)" "$(python sol7.py 2)" "$(python sol7.py 3)"
