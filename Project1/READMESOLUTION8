@@ -1,0 +1,4 @@
+#HOW IT SHOULD BE RAN
+./target8 "$(python sol8.py)"
+
+We had issues with Shell globbing and this one. 
